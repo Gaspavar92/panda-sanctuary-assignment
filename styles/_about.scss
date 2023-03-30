@@ -1,0 +1,29 @@
+@use "./variables" as *;
+
+/*ABOUT SECTION*/
+
+.about {
+    display: flex;
+    gap: 50px;
+    margin: 100px 0;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.about-text h2 {
+    margin: 0;
+}
+
+.about-image {
+    width: 30%;
+}
+
+.about-image img {
+    height: auto;
+    width: 100%;
+}

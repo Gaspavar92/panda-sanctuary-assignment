@@ -1,0 +1,68 @@
+@use "./variables" as *;
+
+/*FOOTER*/
+
+footer {
+    background-color: $pineTwo;
+    color: $white;
+    padding: 100px;
+    position: relative;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+footer button {
+    background-color: $charcoal;
+    width: 30%;
+    line-height: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.newsletter {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style: none;
+    margin: 0;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: $white;
+    font-family: "Offside", cursive;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $charcoal;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+input {
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+}

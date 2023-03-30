@@ -1,0 +1,202 @@
+@use "./variables" as *;
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1025px) {
+
+    .wrapper {
+        width: 95%;
+    }
+
+    .marco {
+        flex-direction: column;
+    }
+
+    .bobby {
+        flex-direction: column-reverse;
+    }
+
+    .spotlight-text-left, .spotlight-text-right {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .marco-image, .bobby-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    footer {
+        padding: 30px;
+        height: 600px;
+    }
+
+    .footer-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        width: 100%;
+        grid-column: span 2;
+        text-align: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    input {
+        color: $charcoal;
+    }
+
+    input::placeholder {
+        color: $charcoal;
+        opacity: 1;
+    }
+
+    footer button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+
+        /*TEXT STYLE VARIABLES*/
+
+        // H1
+
+    $h1Font: 38.8px/63.7px Barlow, sans-serif;
+
+        // Headings
+
+    $h2Font: 32px Offside, cursive;
+    $h3Font: 20px Offside, cursive;
+    $h4Font: 24px Offside, cursive;
+    $h5Font: 12px Offside, cursive;
+
+        // Nav
+
+    $navFont: bold 20px/29px Barlow, sans-serif;
+
+        // Body
+
+    $bodyFont: 20px/30px Barlow, sans-serif;
+    $bodyLetterSpacing: 0.2px;
+
+        // Logo
+
+    $logoFont: 20px/20px Offside, cursive;
+
+        // Buttons
+
+    $buttonFont: 20px/29px Offside, cursive;
+
+    /*GENERIC STYLING*/
+
+    header {
+        height: 60vh;
+        background-attachment: scroll;
+    }
+
+    h1 {
+        font: $h1Font;
+        width: 55%;
+    }
+
+    h2 {
+        font: $h2Font;
+    }
+
+    h3 {
+        font: $h3Font;
+    }
+
+    h4 {
+        font: $h4Font;
+    }
+
+    h5 {
+        font: $h5Font;
+    }
+
+    .navigation {
+        font: $navFont;
+        padding: 10px 0;
+    }
+
+    body {
+        font: $bodyFont;
+    }
+
+    .logo {
+        font: $logoFont;
+    }
+
+    .social-icons, .navigation nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .span {
+        grid-column: span 2;
+        margin-top: 50px;
+    }
+
+    .about {
+        margin: 20px 0;
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .about-text {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-text h2 {
+        width: 100%;
+    }
+
+    .donations {
+        flex-direction: column;
+        padding: 50px;
+        height: 500px;
+    }
+
+    .donations h3 {
+        font-size: 32px;
+        margin: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .flex {
+        justify-content: space-between;
+    }
+}

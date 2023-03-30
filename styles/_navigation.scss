@@ -1,0 +1,21 @@
+@use "./variables" as *;
+
+/*NAVIGATION*/
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 40px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: $white;
+}

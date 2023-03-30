@@ -1,0 +1,20 @@
+@use "./variables" as *;
+
+/*GALLERY*/
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.image {
+    height: auto;
+    width: calc(100% / 3);
+}
+
+.images {
+    display: flex;
+    gap: 20px;
+}

@@ -1,0 +1,73 @@
+@use "./variables" as *;
+
+/*GENERIC STYLING*/
+
+h1 {
+    font: $h1Font;
+    letter-spacing: $h1LetterSpacing;
+    width: 45%;
+}
+
+h2 {
+    font: $h2Font;
+    color: $deepGreen;
+}
+
+h3 {
+    font: $h3Font;
+}
+
+h4 {
+    font: $h4Font;
+    margin: 5px 0;
+}
+
+h5 {
+    font: $h5Font;
+    margin: 5px 0;
+}
+
+.navigation {
+    font: $navFont;
+}
+
+body {
+    font: $bodyFont;
+    letter-spacing: $bodyLetterSpacing;
+    background-image: url(../assets/image-5@2x.png);
+}
+
+.logo {
+    font: $logoFont;
+    width: 50px;
+}
+
+button {
+    font: $buttonFont;
+    color: $white;
+    background-color: $deepGreen;
+    border: none;
+    padding: 15px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.donation-icons {
+    transform: scale(1.8);
+}
+
+.flex {
+    display: flex;
+    grid-column: span 2;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,63 @@
+@use "./variables" as *;
+
+/*SPOTLIGHT*/
+
+.spotlight {
+    display: flex;
+    flex-direction: column;
+    background-color: $pineTwo;
+    width: 100%;
+    color: $white;
+}
+
+.spotlight button {
+    background-color: $white;
+    color: $deepGreen;
+}
+
+.spotlight h2 {
+    color: $white;
+}
+
+.bobby, .marco {
+    display: flex;
+    align-items: center;
+}
+
+.bobby-image, .marco-image {
+    width: 50%;
+}
+
+.bobby-image {
+    background-image: url(../assets/image-2@2x.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 500px;
+}
+
+.marco-image {
+    background-image: url(../assets/debbie-molle-6-dsid-8-ey-9-u-unsplash-1@2x.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 500px;
+}
+
+// I was able to achieve a wrapper like effect (line 263 to 275) thanks to Erika's suggestion
+
+.spotlight-text-left {
+    width: calc(85% / 2);
+    max-width: calc(1400px / 2);
+    margin-left: auto;
+    padding-right: 100px;
+  }
+  
+  .spotlight-text-right {
+    width: calc(85% / 2);
+    max-width: calc(1400px / 2);
+    margin-right: auto;
+    padding-left: 100px;
+  }

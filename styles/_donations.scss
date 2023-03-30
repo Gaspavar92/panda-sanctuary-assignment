@@ -1,0 +1,25 @@
+@use "./variables" as *;
+
+/*DONATIONS*/
+
+.donations {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.donations h3 {
+    color: $deepGreen;
+}
+
+.gifts, .jobs, .events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.donation-icons i {
+    height: 40px;
+}

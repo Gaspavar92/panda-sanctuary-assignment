@@ -1,0 +1,11 @@
+@use "./setup";
+@use "./variables" as *;
+@use "./generic-styling";
+@use "./header";
+@use "./navigation";
+@use "./gallery";
+@use "./about";
+@use "./spotlight";
+@use "./donations";
+@use "./footer";
+@use "./media-queries";
